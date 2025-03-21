@@ -1,0 +1,106 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filtra"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/labelTipoLocali"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tipoLocale"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/tipoLocale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tipoLocali" >
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/convenzionato" />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/isGlutine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Glutine" />
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Latticini" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/FasceSpesa" />
+
+        <Spinner
+            android:id="@+id/Spinner03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/FasceSpesa" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/labelOrdinaPerTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/labelOrdinaPer"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/ordinaPer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/ordinaPer" >
+        </Spinner>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/buttonSalvaFiltro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Salva" />
+    </TableRow>
+
+</TableLayout>

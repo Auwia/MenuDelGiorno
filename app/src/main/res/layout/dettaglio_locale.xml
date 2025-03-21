@@ -1,0 +1,232 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/nome_locale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="32sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/descrizione_locale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="30"
+                android:orientation="horizontal" >
+
+                <RatingBar
+                    android:id="@+id/valutazioneLocale"
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/counter"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="50" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/img_locale"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/foto_locale"
+                android:src="@drawable/restaurant" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="15dp" >
+
+            <Button
+                android:id="@+id/mappaLocale"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"
+                android:contentDescription="@string/mappa_locale"
+                android:drawableTop="@drawable/ic_action_location_found"
+                android:text="@string/mappa" />
+
+            <Button
+                android:id="@+id/chiamaLocale"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"
+                android:contentDescription="@string/chiama_locale"
+                android:drawableTop="@drawable/ic_action_call"
+                android:text="@string/chiama" />
+
+            <Button
+                android:id="@+id/menuLocale"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"
+                android:contentDescription="@string/menu_locale"
+                android:drawableTop="@drawable/menu"
+                android:text="@string/menu" />
+
+            <Button
+                android:id="@+id/preferitiLocale"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"
+                android:contentDescription="@string/preferiti_locale"
+                android:drawableTop="@drawable/ic_action_important"
+                android:text="@string/preferiti" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iconaMappa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_action_location_found" />
+
+            <TextView
+                android:id="@+id/labelIndirizzo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="90"
+                android:gravity="center_vertical" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iconaTelefono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_action_call" />
+
+            <TextView
+                android:id="@+id/labelTelefono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="90"
+                android:gravity="center_vertical" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iconaEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_action_unread" />
+
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="90"
+                android:gravity="center_vertical" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iconaWWW"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_action_web_site" />
+
+            <TextView
+                android:id="@+id/labelWWW"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="90"
+                android:gravity="center_vertical"
+                android:text="@string/labelWWW" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iconaScriviRecensione"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:contentDescription="@string/desc_list_item_icon"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_action_labels" />
+
+            <TextView
+                android:id="@+id/labelScriviRecensione"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="90"
+                android:gravity="center_vertical"
+                android:text="@string/labelScriviRecensione" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

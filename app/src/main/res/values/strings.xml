@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Menu del giorno</string>
+    <string name="login">Profilo</string>
+    <string name="mappa">Mappa</string>
+    <string name="organizza">Inviti &amp; Prenotazioni</string>
+    <string name="preferiti">Preferiti</string>
+    <string name="offerta">Offerta del giorno</string>
+    <string name="dettaglio_locale">Dettaglio locale</string>
+    <string name="dettaglio_menu">Dettaglio menu\'</string>
+    <string name="cerca">Cerca</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="action_login">Login</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="app_id">576966605716162</string>
+    <string name="title_activity_facebook_main">FacebookMainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="instructions">Login to create a link to fetch account data</string>
+    <string name="logout">Log out</string>
+    <string name="loginGoogle">Google+ Login</string>
+    <string name="bottoneLocale">Bottone Foto Locale</string>
+    <string name="immagineOfferta">Immagine offerta speciale</string>
+    <string name="labelKMOnly"> km</string>
+    <string name="filtra"> Filtra</string>
+    <string name="Azienda">Azienda</string>
+    <string name="intolleranze">Intolleranze alimentari</string>
+    <string name="Glutine">Glutine (Celiaci)</string>
+    <string name="Latticini">Latticini</string>
+    <string name="FasceSpesa">Fasce Spesa</string>
+    <string name="BuoniPasto">Buoni Pasto</string>
+    <string name="Salva">Salva</string>
+    <string name="convenzionato">Convenzionato</string>
+    <string name="tipoLocale">Tipo Locale:</string>
+    <string name="labelOrdinaPer">Ordina per:</string>
+    <string name="labelRange">Range €</string>
+    <string name="labelVicinanza">Vicinanza</string>
+    <string name="labelRanking">Ranking</string>
+    <string name="simboloEuro">€</string>
+    <string name="dataCalendario">Seleziona una data</string>
+    <string name="pickDate">Data</string>
+    <string name="listaEventi">Lista eventi organizzati</string>
+    <string name="aggiungiAmico">Aggiungi Amico</string>
+    <string name="eliminaAmico">Elimina Amico</string>
+    <string name="eliminaAmicoLabel">Elimina gli amici selezionati</string>
+    <string name="labelOrganizzaPranzo">Organizza Evento</string>
+    <string name="labelVisualizzaPartecipanti">Visualizza Partecipanti</string>
+    <string name="labelDisdettaPranzo">Disdetta Pranzo</string>
+    <string name="labelPartecipaPranzo">Partecipo!</string>
+    <string name="labelPartecipaPranzoNo">Non partecipo più</string>
+    <string name="labelPrenotaPranzo">Prenota!</string>
+    <string name="labelPrenotaPranzoNo">Non prenotare più</string>
+    <string name="labelPrenotaLocale">Prenota Locale</string>
+    <string name="labelPrenotaLocaleOK">Prenotazione Locale: OK</string>
+    <string name="labelPrenotaLocaleKO">Prenotazione Locale: KO</string>
+    <string name="labelInvitiPranzo">Inviti</string>
+    <string name="selezionaEvento">Seleziona un evento</string>
+    <string name="loading">Recupero informazioni dai social network&#8230;</string>
+    <string name="labelInvita">Invita</string>
+    <string name="labelCancella">Annulla</string>
+    <string name="foto_locale">Foto del Locale</string>
+    <string name="chiama">Chiama</string>
+    <string name="chiama_locale">Bottone per chiamare il locale</string>
+    <string name="mappa_locale">Bottone per avviare la mappa del locale</string>
+    <string name="menu">Menu del giorno</string>
+    <string name="menu_locale">Bottone per visualizzare il menu del giorno del locale</string>
+    <string name="invia">Invia</string>
+    <string name="labelWWW">Visita il sito web del locale</string>
+    <string name="labelScriviRecensione">Scrivi una recensione</string>
+    <string name="labelLeggiRecensione">Recensioni e feedback</string>
+    <string name="preferiti_locale">Bottone per aggiungere a preferiti il locale</string>
+    <string name="ERRORE_LOGIN">"E' necessaria la login ad un social network"</string>
+    <string name="ERRORE_NETWORK">"Internet non è attivo. Vuoi andare al menù impostazioni?"</string>
+    <string name="ERRORE_SITO_WEB">Nessun sito web associato al locale selezionato.</string>
+    <string name="ERRORE_EMAIL">Nessuna e-mail associata al locale selezionato.</string>
+    <string name="ERRORE_TELEFONO">Nessun numero di telefono associato al locale selezionato.</string>
+    <string name="ERRORE_GOOGLE_LOCATOR">"E' necessario attivare il servizio localizzazione di google"</string>
+    <string name="VERIFICA_LOGOUT">Sei sicuro di voler eseguire il logout? Tutte le impostazioni andranno perse.</string>
+    <string name="AVVISO_LOGOUT">Avviso logout</string>
+    <string name="menudelgiornoExit">Sei sicuro di voler uscire dall\'app?</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="login_choice">Scegli il metodo di login</string>
+    <string name="no_info_user">Nominativo con privacy</string>
+
+    <string-array name="FasceSpesa">
+        <item>fino a 5€</item>
+        <item>da 5€ a 10€ </item>
+        <item>oltre 10€</item>
+    </string-array>
+    <string-array name="Aziende">
+        <item>Accenture</item>
+        <item>Telecom Italia</item>
+    </string-array>
+    <string-array name="buoniPasto">
+        <item>Ticket Restaurant</item>
+        <item>Pellegrini card</item>
+    </string-array>
+    <string-array name="tipoLocali">
+        <item>Pizzerie</item>
+        <item>Pub</item>
+        <item>Fast foood</item>
+        <item>Rosticcerie</item>
+        <item>Tavole calde</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_home</item>
+    </array>
+    <array name="ordinaPer">
+        <item>Vicinanza</item>
+        <item>Rating</item>
+        <item>Vicinanza + Rating</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_login_fragment">LoginFragment</string>
+
+</resources>

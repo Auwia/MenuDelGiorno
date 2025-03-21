@@ -1,0 +1,121 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="40"
+            android:contentDescription="@string/desc_list_item_icon"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="60"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intolleranze"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+
+        <CheckBox
+            android:id="@+id/glutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Glutine" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+
+        <CheckBox
+            android:id="@+id/latticini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Latticini" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="@string/FasceSpesa" />
+
+        <Spinner
+            android:id="@+id/spinnerFasceSpesa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:entries="@array/FasceSpesa" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="@string/Azienda" />
+
+        <Spinner
+            android:id="@+id/spinnerAziende"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:entries="@array/Aziende" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+
+        <TextView
+            android:id="@+id/textBuoniPasto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="@string/BuoniPasto" />
+
+        <Spinner
+            android:id="@+id/spinnerBuoniPasto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:entries="@array/buoniPasto" />
+    </TableRow>
+
+</TableLayout>

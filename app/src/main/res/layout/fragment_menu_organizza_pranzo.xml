@@ -1,0 +1,364 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TabWidget>
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TableLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/selezionaEventoInviti"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="40"
+                            android:text="@string/selezionaEvento" />
+
+                        <Spinner
+                            android:id="@+id/listaPranziInvitato"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="60"
+                            android:drawSelectorOnTop="true" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/nomeLocaleInviti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/indirizzoLocaleInviti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/partecipantiInviti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/labelVisualizzaPartecipanti" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ListView
+                            android:id="@+id/listaPartecipantiInviti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/partecipa_pranzo_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/labelPartecipaPranzo"
+                            android:text="@string/labelPartecipaPranzo" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="20"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/nomeLocale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="70"
+                            android:textSize="20sp" />
+
+                        <Spinner
+                            android:id="@+id/listaLocali"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="50"
+                            android:drawSelectorOnTop="true"
+                            android:prompt="@string/listaEventi"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iconaTelefono"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="10"
+                            android:contentDescription="@string/desc_list_item_icon"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/ic_action_call" />
+
+                        <TextView
+                            android:id="@+id/cellulareLocale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="30"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="20" >
+
+                        <ImageButton
+                            android:id="@+id/dataPranzoBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="20"
+                            android:background="@drawable/ic_action_event"
+                            android:contentDescription="@string/dataCalendario"
+                            android:text="@string/pickDate" />
+
+                        <TextView
+                            android:id="@+id/dataPranzoTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="25"
+                            android:text="" />
+
+                        <ImageButton
+                            android:id="@+id/oraPranzoBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="20"
+                            android:background="@drawable/ic_action_time"
+                            android:contentDescription="@string/dataCalendario"
+                            android:text="@string/pickDate" />
+
+                        <TextView
+                            android:id="@+id/oraPranzoTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="25"
+                            android:text="" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="20" >
+
+                        <TextView
+                            android:id="@+id/addAmicoLegenda"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="25"
+                            android:paddingLeft="5dp"
+                            android:text="@string/aggiungiAmico" />
+
+                        <ImageButton
+                            android:id="@+id/addAmico"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="20"
+                            android:background="@drawable/ic_action_add_group"
+                            android:contentDescription="@string/aggiungiAmico"
+                            android:text="@string/pickDate" />
+
+                        <TextView
+                            android:id="@+id/eliminaAmicoLegenda"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="25"
+                            android:paddingLeft="5dp"
+                            android:text="@string/eliminaAmicoLabel" />
+
+                        <ImageButton
+                            android:id="@+id/eliminaAmico"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="20"
+                            android:background="@drawable/ic_action_discard"
+                            android:contentDescription="@string/eliminaAmico"
+                            android:text="@string/pickDate" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20" >
+
+                        <ListView
+                            android:id="@+id/listaAmiciAggiunti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20" >
+
+                        <Button
+                            android:id="@+id/organizza_pranzo_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/labelOrganizzaPranzo"
+                            android:text="@string/labelOrganizzaPranzo" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/selezionaEvento"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="40"
+                            android:text="@string/selezionaEvento" />
+
+                        <Spinner
+                            android:id="@+id/listaPranziOrganizzatore"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="60"
+                            android:drawSelectorOnTop="true" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/nomeLocaleInvitiOrganizzatore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/indirizzoLocaleInvitiOrganizzatore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/partecipantiInvitiOrganizzatore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/labelVisualizzaPartecipanti" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ListView
+                            android:id="@+id/listaPartecipantiInvitiOrganizzatore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/prenota_pranzo_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:contentDescription="@string/labelPrenotaPranzo"
+                            android:text="@string/labelPrenotaPranzo" />
+                    </TableRow>
+                </TableLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</TableLayout>

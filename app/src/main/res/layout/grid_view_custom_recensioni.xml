@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableRow
+        android:id="@+id/widget1232"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <RatingBar
+            android:id="@+id/valutazioneLocale"
+            style="@style/foodRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:gravity="center"
+            android:isIndicator="true"
+            android:clickable="false"
+            android:numStars="5" 
+            android:background="@layout/cell_shape"/>
+
+        <TextView
+            android:id="@+id/recensionista"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:background="@layout/cell_shape" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/recensione"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@layout/cell_shape" />
+    </TableRow>
+
+</TableLayout>
