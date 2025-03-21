@@ -61,14 +61,14 @@ public class FragmentOrganizzaPranzo extends Fragment {
     private View rootView;
     private AlertDialog.Builder dialog;
 
-    private static final String RETRIEVE_ID_PRANZO = "http://menudelgiornomecc.altervista.org/select_pranzo.php";
-    private static final String INSERT_PRANZO = "http://menudelgiornomecc.altervista.org/insert_pranzo.php";
-    private static final String INSERT_PARTECIPANTI = "http://menudelgiornomecc.altervista.org/insert_partecipanti.php";
-    private static final String RETRIEVE_PRANZI_ORGANIZZATORE = "http://menudelgiornomecc.altervista.org/select_pranzi_organizzatore.php?id_organizzatore=";
-    private static final String RETRIEVE_PRANZI_INVITATO = "http://menudelgiornomecc.altervista.org/select_pranzi_invitato.php?id_invitato=";
-    private static final String RETRIEVE_PRANZO_INVITATI = "http://menudelgiornomecc.altervista.org/select_pranzo_invitati.php?id_pranzo=";
-    private static final String UPDATE_PRANZO_INVITATO = "http://menudelgiornomecc.altervista.org/update_pranzo_invitato.php";
-    private static final String UPDATE_PRANZO_ORGANIZZATORE = "http://menudelgiornomecc.altervista.org/update_pranzo_organizzatore.php";
+    private static final String RETRIEVE_ID_PRANZO = "https://menudelgiornomecc.altervista.org/select_pranzo.php";
+    private static final String INSERT_PRANZO = "https://menudelgiornomecc.altervista.org/insert_pranzo.php";
+    private static final String INSERT_PARTECIPANTI = "https://menudelgiornomecc.altervista.org/insert_partecipanti.php";
+    private static final String RETRIEVE_PRANZI_ORGANIZZATORE = "https://menudelgiornomecc.altervista.org/select_pranzi_organizzatore.php?id_organizzatore=";
+    private static final String RETRIEVE_PRANZI_INVITATO = "https://menudelgiornomecc.altervista.org/select_pranzi_invitato.php?id_invitato=";
+    private static final String RETRIEVE_PRANZO_INVITATI = "https://menudelgiornomecc.altervista.org/select_pranzo_invitati.php?id_pranzo=";
+    private static final String UPDATE_PRANZO_INVITATO = "https://menudelgiornomecc.altervista.org/update_pranzo_invitato.php";
+    private static final String UPDATE_PRANZO_ORGANIZZATORE = "https://menudelgiornomecc.altervista.org/update_pranzo_organizzatore.php";
 
     private final Hashtable<String, String> valori = new Hashtable<>();
     private final ArrayList<Amico> listaAmiciFull = new ArrayList<>();
@@ -104,7 +104,7 @@ public class FragmentOrganizzaPranzo extends Fragment {
 
         Bundle params = new Bundle();
         params.putString("message", "Sei stato invitato a pranzo da un amico!");
-        params.putString("link", "http://samples.ogp.me/440002909390231");
+        params.putString("link", "https://samples.ogp.me/440002909390231");
         params.putString("name", "Menu Del Giorno");
         params.putString("description", "Evento pranzo al locale: " + nome_locale + "\nData: " + data_ora_evento);
         params.putString("tags", id_invitato);

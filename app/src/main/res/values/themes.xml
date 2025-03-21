@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.MenuDelGiorno" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Usa Theme.AppCompat per compatibilità con AppCompatActivity -->
+    <style name="Theme.MenuDelGiorno" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- eventuali personalizzazioni -->
+    </style>
+
 </resources>

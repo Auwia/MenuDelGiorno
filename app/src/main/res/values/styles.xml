@@ -1,25 +1,24 @@
 <resources>
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+    <!-- Base application theme -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customizzazioni generali per il tema base -->
+        <!-- Esempio: -->
+        <!-- <item name="colorPrimary">@color/colorPrimary</item> -->
+        <!-- <item name="colorPrimaryDark">@color/colorPrimaryDark</item> -->
+        <!-- <item name="colorAccent">@color/colorAccent</item> -->
     </style>
 
-    <!-- Application theme. -->
+    <!-- Application theme che userai -->
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- Tutte le tue customizzazioni qui -->
     </style>
 
-    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+    <!-- Tema personalizzato per RatingBar -->
+    <style name="foodRatingBar" parent="Widget.AppCompat.RatingBar">
         <item name="android:progressDrawable">@drawable/ratingstars</item>
         <item name="android:minHeight">22dip</item>
         <item name="android:maxHeight">22dip</item>
     </style>
+
 </resources>

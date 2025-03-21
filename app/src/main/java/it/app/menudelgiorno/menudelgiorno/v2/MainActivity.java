@@ -21,7 +21,6 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
 import java.lang.ref.WeakReference;
@@ -41,7 +40,7 @@ import it.app.menudelgiorno.menudelgiorno.v2.googlelogin.GoogleLogin;
 import it.app.menudelgiorno.menudelgiorno.v2.googlemaps.FragmentMaps;
 import it.app.menudelgiorno.menudelgiorno.v2.utility.Utility;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
@@ -66,6 +65,12 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
 
         context = this;
+
+        fragmentManager = getSupportFragmentManager();
+        fragment = new FragmentOffertaGiorno();
+        fragmentManager.beginTransaction()
+                .replace(R.id.content_frame, fragment).addToBackStack(null)
+                .commit();
 
         TypedArray navMenuIcons = getResources()
                 .obtainTypedArray(R.array.nav_drawer_icons);
@@ -95,8 +100,10 @@ public class MainActivity extends FragmentActivity {
                 navDrawerItems);
         mDrawerList.setAdapter(adapter);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setHomeButtonEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeButtonEnabled(true);
+        }
 
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
                 R.drawable.ic_drawer, R.string.drawer_open
@@ -111,11 +118,6 @@ public class MainActivity extends FragmentActivity {
             }
         };
         mDrawerLayout.setDrawerListener(mDrawerToggle);
-
-        fragment = new FragmentOffertaGiorno();
-        fragmentManager.beginTransaction()
-                .replace(R.id.content_frame, fragment).addToBackStack(null)
-                .commit();
 
         // setta il titolo dei fragment
         fragmentManager
